@@ -61,3 +61,14 @@ header {
 .content-container {
   height: 100%;
   margin-left: 15%; }
+
+/*****************CARD CSS******************/
+.card-select {
+  position: absolute;
+  right: 6%;
+  top: 18px;
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2); }

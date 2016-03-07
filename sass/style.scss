@@ -12,6 +12,18 @@ $hundred: 100%;
 $zero: 0;
 $centered: center;
 
+@mixin transform($transforms){
+  -ms-transform: $transforms;
+  -moz-transform: $transforms;
+  -webkit-transform: $transforms;
+  -o-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
 body{
   background-color: $beige;
   margin: $zero;
@@ -75,4 +87,11 @@ header{
 .content-container{
   height: $hundred;
   margin-left: 15%;
+}
+/*****************CARD CSS******************/
+.card-select{
+  position: absolute;
+  right: 6%;
+  top: 18px;
+  @include transform(scale(2));
 }
