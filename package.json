@@ -4,7 +4,8 @@
   "description": "Test for angularjs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/mwarnsley/AngularJS-Test#readme",
   "devDependencies": {
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0"
   }
