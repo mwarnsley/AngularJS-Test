@@ -1,0 +1,21 @@
+$gray: #9fa8a3;
+$teal: #c5d5cb;
+$no-style: none;
+$float-left: left;
+$float-right: right;
+$fixed: fixed;
+$relative: relative;
+$absolute: absolute;
+
+header{
+  background-color: $gray;
+  height: 75px;
+  position: $fixed;
+  width: 100%;
+}
+ul{
+  list-style-type: $no-style;
+}
+li{
+  float: $float-left;
+}
