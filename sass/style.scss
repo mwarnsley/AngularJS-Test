@@ -1,21 +1,61 @@
+$beige: #e3e0cf;
 $gray: #9fa8a3;
 $teal: #c5d5cb;
+$white: #ffffff;
 $no-style: none;
 $float-left: left;
 $float-right: right;
 $fixed: fixed;
 $relative: relative;
 $absolute: absolute;
+$hundred: 100%;
 
-header{
-  background-color: $gray;
-  height: 75px;
-  position: $fixed;
-  width: 100%;
+body{
+  background-color: $beige;
+  margin: 0;
+  overflow: hidden;
 }
 ul{
   list-style-type: $no-style;
 }
-li{
+.page-container{
+  margin-top: 75px;
+}
+/*************HEADER CSS*************/
+header{
+  background-color: $gray;
+  height: 75px;
+  position: $fixed;
+  top: 0;
+  width: $hundred;
+  z-index: 999;
+}
+.header-ul{
+  position: $relative;
+  top: 25px;
+}
+.header-ul li{
+  color: $white;
   float: $float-left;
+  font-size: 20px;
+  padding: 0px 50px;
+}
+/**********************Navigation CSS**********************/
+.side-nav{
+  background-color: $teal;
+  height: $hundred;
+  margin: 0;
+  padding: 0;
+  position: $fixed;
+  overflow: auto;
+  width: 250px;
+}
+.side-nav-container{
+  position: $relative;
+  top: 15%;
+}
+/******************PAGE CONTENT CSS***************/
+.content-container{
+  height: $hundred;
+  margin-left: 15%;
 }
