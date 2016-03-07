@@ -10,7 +10,7 @@ a {
   text-decoration: none; }
 
 .opp-container {
-  margin-top: 55px; }
+  margin-top: 75px; }
 
 .about-container {
   margin-top: 150px;
@@ -52,6 +52,10 @@ header {
 .side-nav-container {
   position: relative;
   top: 15%; }
+
+#show {
+  bottom: 0;
+  position: fixed; }
 
 /******************PAGE CONTENT CSS***************/
 .content-container {

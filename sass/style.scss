@@ -9,11 +9,12 @@ $fixed: fixed;
 $relative: relative;
 $absolute: absolute;
 $hundred: 100%;
+$zero: 0;
 $centered: center;
 
 body{
   background-color: $beige;
-  margin: 0;
+  margin: $zero;
 }
 ul{
   list-style-type: $no-style;
@@ -23,14 +24,14 @@ a{
   text-decoration: $no-style;
 }
 .opp-container{
-  margin-top: 55px;
+  margin-top: 75px;
 }
 .about-container{
   margin-top: 150px;
   text-align: $centered;
 }
 input{
-  outline: 0;
+  outline: $zero;
   margin-bottom: 10px;
   padding: 10px;
 }
@@ -39,7 +40,7 @@ header{
   background-color: $gray;
   height: 75px;
   position: $fixed;
-  top: 0;
+  top: $zero;
   width: $hundred;
   z-index: 999;
 }
@@ -57,14 +58,18 @@ header{
 .side-nav{
   background-color: $teal;
   height: $hundred;
-  margin: 0;
-  padding: 0;
+  margin: $zero;
+  padding: $zero;
   position: $fixed;
   width: 250px;
 }
 .side-nav-container{
   position: $relative;
   top: 15%;
+}
+#show{
+  bottom: $zero;
+  position: $fixed;
 }
 /******************PAGE CONTENT CSS***************/
 .content-container{
