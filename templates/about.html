@@ -1,0 +1,43 @@
+    <div class="about-container">
+        <div class="user-input">
+            <form action="">
+                <input type="text" name="first" placeholder="First Name" /><br/>
+                <input type="text" name="last" placeholder="Last Name" />
+                <h3>Favorite Color: </h3>
+                <label for="color">Pick a color:</label>
+                <input id="color" type="text" value="#4abfff"/><br/>
+                <input class="btn btn-default btn-large btn-danger" type="button" value="DELETE" />
+                <input class="btn btn-default btn-large btn-success" type="button" value="SAVE" />
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // This function will update the input element based
+            // on the currently selected color in the picker
+            var updatePreview = function() {
+                var color = $(this).chromoselector('getColor');
+                $(this).css({
+                    'background-color': color.getHexString(),
+                    'color': color.getTextColor().getHexString(),
+                    'text-shadow': '0 1px 0 ' + color.getTextColor().getTextColor().getHexString()
+                });
+            };
+            // The CSS is set here, so that even if
+            // a user has disabled javascript, it will
+            // still be possible to edit the color
+            $('#color').css({
+                border: '5px ridge gray',
+                cursor: 'pointer',
+                height: '25px',
+                width: '25px',
+                'text-indent': '25px',
+                padding: 0
+            }).chromoselector({ // Initialise the picker
+                create: updatePreview,
+                update: updatePreview,
+                preview: false,
+                roundcorners: false
+            });
+        });
+    </script>

@@ -9,6 +9,7 @@ $fixed: fixed;
 $relative: relative;
 $absolute: absolute;
 $hundred: 100%;
+$centered: center;
 
 body{
   background-color: $beige;
@@ -17,8 +18,21 @@ body{
 ul{
   list-style-type: $no-style;
 }
-.page-container{
-  margin-top: 75px;
+a{
+  color: $white;
+  text-decoration: $no-style;
+}
+.opp-container{
+  margin-top: 55px;
+}
+.about-container{
+  margin-top: 150px;
+  text-align: $centered;
+}
+input{
+  outline: 0;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 /*************HEADER CSS*************/
 header{
